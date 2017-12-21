@@ -5,5 +5,4 @@ package com.sinothk.tab.weiXinTabs;
  */
 
 public class WeiXinTabView {
-
 }
