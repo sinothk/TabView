@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<declare-styleable name="XLoadingView">-->
+        <!--<attr name="loadingView" format="reference" />-->
+        <!--<attr name="errorView" format="reference" />-->
+        <!--<attr name="emptyView" format="reference" />-->
+        <!--<attr name="noNetworkView" format="reference" />-->
+    <!--</declare-styleable>-->
+
+    <!--<declare-styleable name="XStateButton">-->
+        <!--&lt;!&ndash;text color&ndash;&gt;-->
+        <!--<attr name="normalTextColor" format="color|reference" />-->
+        <!--<attr name="pressedTextColor" format="color|reference" />-->
+        <!--<attr name="unableTextColor" format="color|reference" />-->
+        <!--&lt;!&ndash;stroke width and color, dash width, dash gap&ndash;&gt;-->
+        <!--<attr name="strokeDashWidth" format="dimension|reference" />-->
+        <!--<attr name="strokeDashGap" format="dimension|reference" />-->
+        <!--<attr name="normalStrokeWidth" format="dimension|reference" />-->
+        <!--<attr name="pressedStrokeWidth" format="dimension|reference" />-->
+        <!--<attr name="unableStrokeWidth" format="dimension|reference" />-->
+        <!--<attr name="normalStrokeColor" format="color|reference" />-->
+        <!--<attr name="pressedStrokeColor" format="color|reference" />-->
+        <!--<attr name="unableStrokeColor" format="color|reference" />-->
+        <!--&lt;!&ndash;background color&ndash;&gt;-->
+        <!--<attr name="normalBackgroundColor" format="color|reference" />-->
+        <!--<attr name="pressedBackgroundColor" format="color|reference" />-->
+        <!--<attr name="unableBackgroundColor" format="color|reference" />-->
+        <!--&lt;!&ndash;background radius&ndash;&gt;-->
+        <!--<attr name="radius" format="dimension|reference" />-->
+        <!--<attr name="round" format="boolean|reference" />-->
+        <!--&lt;!&ndash;animation duration&ndash;&gt;-->
+        <!--<attr name="animationDuration" format="integer|reference" />-->
+
+    <!--</declare-styleable>-->
+
+    <!--<declare-styleable name="XStateImageView">-->
+        <!--<attr name="normalBackground" format="color|reference" />-->
+        <!--<attr name="pressedBackground" format="color|reference" />-->
+        <!--<attr name="unableBackground" format="color|reference" />-->
+        <!--&lt;!&ndash;animation duration&ndash;&gt;-->
+        <!--<attr name="AnimationDuration" format="integer|reference" />-->
+    <!--</declare-styleable>-->
+
+    <!--<declare-styleable name="XDrawableTextView">-->
+        <!--<attr name="leftDrawable" format="reference|color"/>-->
+        <!--<attr name="rightDrawable" format="reference|color"/>-->
+        <!--<attr name="topDrawable" format="reference|color"/>-->
+        <!--<attr name="bottomDrawable" format="reference|color"/>-->
+
+        <!--<attr name="leftDrawableWidth" format="reference|dimension"/>-->
+        <!--<attr name="rightDrawableWidth" format="reference|dimension"/>-->
+        <!--<attr name="topDrawableWidth" format="reference|dimension"/>-->
+        <!--<attr name="bottomDrawableWidth" format="reference|dimension"/>-->
+
+        <!--<attr name="leftDrawableHeight" format="reference|dimension"/>-->
+        <!--<attr name="rightDrawableHeight" format="reference|dimension"/>-->
+        <!--<attr name="topDrawableHeight" format="reference|dimension"/>-->
+        <!--<attr name="bottomDrawableHeight" format="reference|dimension"/>-->
+    <!--</declare-styleable>-->
+
+    <!--透明渐变的TabView-->
+    <declare-styleable name="AlphaTabView">
+        <attr name="tabIconNormal" format="reference" />
+        <attr name="tabIconSelected" format="reference" />
+        <attr name="tabText" format="string" />
+        <attr name="tabTextSize" format="dimension" />
+        <attr name="textColorNormal" format="color" />
+        <attr name="textColorSelected" format="color" />
+        <attr name="badgeBackgroundColor" format="color" />
+        <attr name="paddingTexwithIcon" format="dimension"/>
+    </declare-styleable>
+
+    <!--<declare-styleable name="NavigationTabStrip">-->
+        <!--<attr name="nts_color" format="color"/>-->
+        <!--<attr name="nts_size" format="dimension"/>-->
+        <!--<attr name="nts_weight" format="dimension"/>-->
+        <!--<attr name="nts_factor" format="float"/>-->
+        <!--<attr name="nts_titles" format="reference"/>-->
+
+        <!--<attr name="nts_type" format="enum">-->
+            <!--<enum name="line" value="0"/>-->
+            <!--<enum name="point" value="1"/>-->
+        <!--</attr>-->
+        <!--<attr name="nts_gravity" format="enum">-->
+            <!--<enum name="bottom" value="0"/>-->
+            <!--<enum name="top" value="1"/>-->
+        <!--</attr>-->
+
+        <!--<attr name="nts_typeface" format="string"/>-->
+        <!--<attr name="nts_corners_radius" format="dimension"/>-->
+        <!--<attr name="nts_animation_duration" format="integer"/>-->
+
+        <!--<attr name="nts_inactive_color" format="color"/>-->
+        <!--<attr name="nts_active_color" format="color"/>-->
+    <!--</declare-styleable>-->
+
+    <!--<declare-styleable name="TagFlowLayout">-->
+        <!--<attr name="max_select" format="integer"></attr>-->
+        <!--<attr name="tag_gravity">-->
+            <!--<enum name="left" value="-1" />-->
+            <!--<enum name="center" value="0" />-->
+            <!--<enum name="right" value="1" />-->
+        <!--</attr>-->
+    <!--</declare-styleable>-->
+</resources>
