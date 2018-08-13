@@ -1,6 +1,11 @@
 package com.sinothk.tab.demo;
 
+import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 
 /**
  * <pre>
@@ -10,8 +15,15 @@ import android.support.v4.app.Fragment;
  *  更新:
  * <pre>
  */
-public class Test1 extends Fragment {
+public class UnreadTipFragment extends Fragment {
     public static Fragment newInstance(String s) {
-        return new Test1();
+        return new UnreadTipFragment();
+    }
+
+
+    @Nullable
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        return inflater.inflate(R.layout.unread_num_layout, null);
     }
 }

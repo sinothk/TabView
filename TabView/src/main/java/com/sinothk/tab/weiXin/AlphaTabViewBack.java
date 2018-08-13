@@ -26,7 +26,7 @@ import com.sinothk.tab.R;
  * 修订历史：添加动态角标
  * ================================================
  */
-public class AlphaTabView extends View {
+public class AlphaTabViewBack extends View {
 
     private Context mContext;                     //上下文
     private Bitmap mIconNormal;                   //默认图标
@@ -50,17 +50,17 @@ public class AlphaTabView extends View {
     private int mBadgeNumber;                       //角标数
     private int mBadgeBackgroundColor = 0xFFFF0000;       //默认红颜色
 
-    public AlphaTabView(Context context) {
+    public AlphaTabViewBack(Context context) {
         this(context, null);
         mContext = context;
     }
 
-    public AlphaTabView(Context context, AttributeSet attrs) {
+    public AlphaTabViewBack(Context context, AttributeSet attrs) {
         this(context, attrs, 0);
         mContext = context;
     }
 
-    public AlphaTabView(Context context, AttributeSet attrs, int defStyleAttr) {
+    public AlphaTabViewBack(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         mContext = context;
         mTextSize = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_SP, mTextSize, getResources().getDisplayMetrics());

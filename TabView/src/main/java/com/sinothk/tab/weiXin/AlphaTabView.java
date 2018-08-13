@@ -183,40 +183,51 @@ public class AlphaTabView extends View {
      * badge
      */
     private void drawBadge(Canvas canvas) {
-        int i = getMeasuredWidth() / 14;
-        int j = getMeasuredHeight() / 9;
-        i = i >= j ? j : i;
+//        int i = getMeasuredWidth() / 14;
+//        int j = getMeasuredHeight() / 9;
+//        i = i >= j ? j : i;
+
+        int i = 18;// 16dp
+
         if (mBadgeNumber > 0) {
             Paint backgroundPaint = new Paint();
             backgroundPaint.setColor(mBadgeBackgroundColor);
             backgroundPaint.setAntiAlias(true);
             String number = mBadgeNumber > 99 ? "99+" : String.valueOf(mBadgeNumber);
-            float textSize = i / 1.5f == 0 ? 5 : i / 1.5f;
+
+            float textSize = (int) dp2px(mContext, 12);
+//            float textSize = i / 1.5f == 0 ? 5 : i / 1.5f;
+
             int width;
-            int hight = (int) dp2px(mContext, i);
+            int height = (int) dp2px(mContext, i);
+
             Bitmap bitmap;
             if (number.length() == 1) {
                 width = (int) dp2px(mContext, i);
-                bitmap = Bitmap.createBitmap(width, hight, Bitmap.Config.ARGB_8888);
+                bitmap = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888);
             } else if (number.length() == 2) {
                 width = (int) dp2px(mContext, i + 5);
-                bitmap = Bitmap.createBitmap(width, hight, Bitmap.Config.ARGB_8888);
+                bitmap = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888);
             } else {
                 width = (int) dp2px(mContext, i + 8);
                 bitmap = Bitmap.createBitmap(width, width, Bitmap.Config.ARGB_8888);
             }
+
             Canvas canvasMessages = new Canvas(bitmap);
-            RectF messageRectF = new RectF(0, 0, width, hight);
+            RectF messageRectF = new RectF(0, 0, width, height);
             canvasMessages.drawRoundRect(messageRectF, 50, 50, backgroundPaint); //画椭圆
             Paint numberPaint = new Paint();
             numberPaint.setColor(Color.WHITE);
-            numberPaint.setTextSize(dp2px(mContext, textSize));
+
+//            numberPaint.setTextSize(dp2px(mContext, textSize));
+            numberPaint.setTextSize(textSize);
+
             numberPaint.setAntiAlias(true);
             numberPaint.setTextAlign(Paint.Align.CENTER);
             numberPaint.setTypeface(Typeface.DEFAULT_BOLD);
             Paint.FontMetrics fontMetrics = numberPaint.getFontMetrics();
             float x = width / 2f;
-            float y = hight / 2f - fontMetrics.descent + (fontMetrics.descent - fontMetrics.ascent) / 2;
+            float y = height / 2f - fontMetrics.descent + (fontMetrics.descent - fontMetrics.ascent) / 2;
             canvasMessages.drawText(number, x, y, numberPaint);
             float left = getMeasuredWidth() / 10 * 6f;
             float top = dp2px(mContext, 5);
