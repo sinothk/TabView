@@ -98,6 +98,6 @@
 
         // 未读数据提示
         alphaTabsIndicator.getTabView(0).showNumber(144);
-//        alphaTabsIndicator.getTabView(1).showNumber(100);
+        alphaTabsIndicator.getTabView(1).showNumber(100);
         alphaTabsIndicator.getTabView(1).showPoint();
     }
