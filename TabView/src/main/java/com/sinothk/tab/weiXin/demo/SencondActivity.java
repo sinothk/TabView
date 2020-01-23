@@ -5,7 +5,7 @@
 //import android.widget.Toast;
 //
 //import com.sinothk.tab.weinxin.AlphaTabsIndicator;
-//import com.sinothk.tab.weinxin.OnTabChangedListner;
+//import com.sinothk.tab.weinxin.OnTabChangedListener;
 //
 //public class SencondActivity extends AppCompatActivity {
 //
@@ -36,7 +36,7 @@
 //
 //        alphaTabsIndicator2.setTabCurrenItem(2);
 //        //tab选中的监听回调
-//        alphaTabsIndicator2.setOnTabChangedListner(new OnTabChangedListner() {
+//        alphaTabsIndicator2.setOnTabChangedListner(new OnTabChangedListener() {
 //            @Override
 //            public void onTabSelected(int tabNum) {
 //                Toast.makeText(SencondActivity.this, "select~" + tabNum, Toast.LENGTH_SHORT).show();

@@ -3,10 +3,11 @@ package com.sinothk.tab.weiXin;
 import android.content.Context;
 import android.os.Bundle;
 import android.os.Parcelable;
-import android.support.v4.view.ViewPager;
 import android.util.AttributeSet;
 import android.view.View;
 import android.widget.LinearLayout;
+
+import androidx.viewpager.widget.ViewPager;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,7 +25,7 @@ import java.util.List;
 public class AlphaTabsIndicator extends LinearLayout {
 
     private ViewPager mViewPager;
-    private OnTabChangedListner mListner;
+    private OnTabChangedListener mListner;
     private List<AlphaTabView> mTabViews;
     private boolean ISINIT;
     /**
@@ -59,7 +60,7 @@ public class AlphaTabsIndicator extends LinearLayout {
         init();
     }
 
-    public void setOnTabChangedListner(OnTabChangedListner listner) {
+    public void setOnTabChangedListner(OnTabChangedListener listner) {
         this.mListner = listner;
         isInit();
     }

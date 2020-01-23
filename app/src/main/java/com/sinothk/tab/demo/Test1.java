@@ -1,6 +1,7 @@
 package com.sinothk.tab.demo;
 
-import android.support.v4.app.Fragment;
+
+import androidx.fragment.app.Fragment;
 
 /**
  * <pre>

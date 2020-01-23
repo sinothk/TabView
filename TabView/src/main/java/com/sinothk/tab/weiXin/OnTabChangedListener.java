@@ -9,6 +9,6 @@ package com.sinothk.tab.weiXin;
  * 修订历史：
  * ================================================
  */
-public interface OnTabChangedListner {
+public interface OnTabChangedListener {
     void onTabSelected(int tabNum);
 }
